@@ -15,7 +15,12 @@ padding-left:15px;
 padding-right:15px;
 
 }
-
+li{
+    text-align: center;
+    border:black;
+    border-style: solid;
+    margin:2px;
+}
 .navbar{
     background-color: rgb(141, 141, 134);
     border-bottom:black;
@@ -24,6 +29,11 @@ padding-right:15px;
 .navbar-toggle{
 margin-top: 3%;
     background-color: white
+}
+.navbar-collapse{
+
+  margin-left:auto;
+  margin-right:auto;
 }
 .menu_title{
     color:rgb(141, 141, 134);
@@ -38,7 +48,7 @@ margin-top: 3%;
 
 }
 
-#div1 {
+#beef {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 1;
@@ -50,7 +60,7 @@ justify-self: center;
 
 }
 
-#div2 {
+#sushi {
 
     background-color: rgb(141, 141, 134);
     grid-column-start: 1;
@@ -61,7 +71,7 @@ justify-self: center;
     overflow: hidden;
 }
 
-#div3 {
+#chicken {
     background-color: rgb(141, 141, 134);
     grid-column-start: 1;
     grid-column-end: 4;
@@ -157,7 +167,7 @@ color:white;
 
 @media (max-width:900px){
 
-    #div1 {
+    #beef {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row: 1;
@@ -165,7 +175,7 @@ color:white;
 
     }
 
-    #div2 {
+    #sushi {
 
         grid-column-start: 1;
         grid-column-end: 5;
@@ -174,7 +184,7 @@ color:white;
 
     }
 
-    #div3 {
+    #chicken {
 
         grid-column-start: 1;
         grid-column-end: 5;
