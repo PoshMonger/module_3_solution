@@ -1,0 +1,207 @@
+
+body {
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} 
+
+#main_container {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    grid-auto-rows: 210px;
+padding-left:15px;
+padding-right:15px;
+
+}
+
+.navbar{
+    background-color: rgb(141, 141, 134);
+    border-bottom:black;
+    border-bottom-style: solid;
+}
+.navbar-toggle{
+margin-top: 3%;
+    background-color: white
+}
+.menu_title{
+    color:rgb(141, 141, 134);
+}
+.icon-bar{
+    background-color: rgb(141, 141, 134);
+}
+#menu_header {
+    width: 100%;
+    text-align: center;
+    margin-bottom:3%;
+
+}
+
+#div1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    background-color: rgb(141, 141, 134);
+justify-self: center;
+  
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#div2 {
+
+    background-color: rgb(141, 141, 134);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2;
+
+    height: 100%;
+    overflow: hidden;
+}
+
+#div3 {
+    background-color: rgb(141, 141, 134);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+
+
+    height: 100%;
+    overflow: hidden;
+}
+
+.div_text_content {
+
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.top_right_subtitle {
+
+  padding-top:4px;
+ height:35px;
+    vertical-align: middle;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+#beef_subtitle {
+    background-color: rgb(158, 59, 59);
+color:white;
+    text-align: center;
+    
+    
+}
+
+#chicken_subtitle {
+    background-color: rgb(233, 133, 133);
+
+    text-align: center;
+
+}
+
+#sushi_subtitle {
+    background-color: rgb(218, 216, 184);
+
+    text-align: center;
+
+
+}
+
+/*
+@media (min-width:768px) and (max-width: 991px) {
+
+
+
+    #main_container {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-auto-rows: 150px;
+   
+
+    }
+
+    #div1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+
+
+    }
+
+    #div2 {
+
+        grid-column-start: 3;
+        grid-column-end: 5;
+        
+        grid-row: 1;
+
+    }
+
+    #div3 {
+
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 2;
+
+    }
+
+}*/
+
+@media (max-width:900px){
+
+    #div1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 1;
+
+
+    }
+
+    #div2 {
+
+        grid-column-start: 1;
+        grid-column-end: 5;
+        ;
+        grid-row: 2;
+
+    }
+
+    #div3 {
+
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 3;
+}
+
+#main_container {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-rows: 450px;
+
+    padding-left:25px;
+    padding-right:25px;
+}}
+
+.smart-scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .scrolled-down{
+     transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+     transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
